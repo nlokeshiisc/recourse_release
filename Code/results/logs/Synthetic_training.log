@@ -1,0 +1,24 @@
+2022-03-13 11:13:35,417 :: main_our_method.py:<module> :: {
+    "general_specs": "{'dataset': 'synthetic', 'training_data_subset': 'full_data'}",
+    "theta_specs": "{'model_type': 'LR', 'model_name': 'synthetic', 'epochs': '5', 'lr': '0.001', 'scheduler': 'True'}",
+    "greedy_specs": "{'model_name': 'greedy-synthetic', 'load_theta': 'True', 'budget': '30', 'num_badex': '100', 'num_R_per_iter': '10'}",
+    "phi_specs": "{'model_name': 'None', 'epochs': '30', 'batch_norm': 'True', 'lr': '0.01', 'scheduler': 'True'}",
+    "our_method_specs": "{'our_method_type': 'our_method', 'model_name': 'synthetic-phi', 'our_method_args': '{\\'pretrn_th_phi\\': \"{\\'th\\': \\'True\\', \\'phi\\': \\'False\\'}\"}', 'epochs': '5', 'prior_on_beta_using_theta': 'True', 'filter_groups_at_idx': '1000', 'interleave': 'True', 'interleave_epochs_or_sgditers': 'interleave _epochs', 'interleave _epochs': \"{'phi': '3', 'th': '2'}\", 'interleave_sgd_iters': \"{'th': '20', 'phi': '20'}\"}",
+    "train_args": "{'th': 'True', 'greedy': 'True', 'phi': 'False', 'our_method': 'True'}",
+    "experiment_name": "Synthetic training",
+    "logger": "results/logs/Synthetic_training.log",
+    "gpu_id": "0",
+    "summarywriter": "tblogs/Syntetic_training"
+}
+2022-03-13 11:13:35,418 :: main_helper.py:get_data_helper :: Loading dataset: synthetic
+2022-03-13 11:13:35,418 :: main_helper.py:process_data :: Loading: training_synthetic-new1.pkl
+2022-03-13 11:13:35,639 :: main_helper.py:process_data :: Loading: testing_synthetic-new1.pkl
+2022-03-13 11:13:35,648 :: main_helper.py:process_data :: Loading: testing_synthetic.pkl
+2022-03-13 11:13:44,292 :: main_helper.py:get_data_helper :: Dataset loading completed
+2022-03-13 11:13:44,292 :: main_our_method.py:<module> :: num_train: 6000, num_test: 800
+2022-03-13 11:13:48,292 :: main_helper.py:fit_theta :: nn_theta is: LR
+2022-03-13 11:13:48,294 :: main_helper.py:fit_theta :: Fittig nntheta for 5 Epochs
+2022-03-13 11:13:49,055 :: nn_theta.py:fit_data :: Epoch: 0 accuracy: 0.66
+2022-03-13 11:13:49,743 :: nn_theta.py:fit_data :: Epoch: 1 accuracy: 0.72125
+2022-03-13 11:13:50,276 :: nn_theta.py:fit_data :: Epoch: 2 accuracy: 0.74625
+2022-03-13 11:13:50,852 :: nn_theta.py:fit_data :: Epoch: 3 accuracy: 0.74

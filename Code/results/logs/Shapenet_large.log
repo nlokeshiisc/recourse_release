@@ -1,0 +1,20 @@
+2022-03-13 11:14:51,953 :: main_our_method.py:<module> :: {
+    "general_specs": "{'dataset': 'shapenet_full_with_Gausian_Noise', 'training_data_subset': 'full_data'}",
+    "theta_specs": "{'model_type': 'resnet', 'model_name': 'final-theta-baseline-large', 'epochs': '5', 'lr': '0.001', 'scheduler': 'True'}",
+    "greedy_specs": "{'model_name': 'final-greedy-large', 'load_theta': 'True', 'budget': '30', 'num_badex': '100', 'num_R_per_iter': '10'}",
+    "phi_specs": "{'model_name': 'None', 'epochs': '30', 'batch_norm': 'True', 'lr': '0.01', 'scheduler': 'True'}",
+    "our_method_specs": "{'our_method_type': 'our_method', 'model_name': 'final-phi-large', 'our_method_args': '{\\'pretrn_th_phi\\': \"{\\'th\\': \\'True\\', \\'phi\\': \\'False\\'}\"}', 'epochs': '5', 'prior_on_beta_using_theta': 'True', 'filter_groups_at_idx': '1000', 'interleave': 'True', 'interleave_epochs_or_sgditers': 'interleave _epochs', 'interleave _epochs': \"{'phi': '3', 'th': '2'}\", 'interleave_sgd_iters': \"{'th': '20', 'phi': '20'}\"}",
+    "train_args": "{'th': 'True', 'greedy': 'True', 'phi': 'False', 'our_method': 'True'}",
+    "experiment_name": "Shapenet_large",
+    "logger": "results/logs/Shapenet_large.log",
+    "gpu_id": "0",
+    "summarywriter": "tblogs/Shapenet_large"
+}
+2022-03-13 11:14:51,954 :: main_helper.py:get_data_helper :: Loading dataset: shapenet_full_with_Gausian_Noise
+2022-03-13 11:14:51,954 :: main_helper.py:process_data :: Loading: ./data/training_shapenet_full.pkl
+2022-03-13 11:15:02,863 :: main_helper.py:process_data :: Loading: ./data/test_shapenet.pkl
+2022-03-13 11:15:07,923 :: main_helper.py:process_data :: Loading: ./data/test_shapenet.pkl
+2022-03-13 11:15:31,635 :: main_helper.py:get_data_helper :: Dataset loading completed
+2022-03-13 11:15:31,636 :: main_our_method.py:<module> :: num_train: 10000, num_test: 7200
+2022-03-13 11:15:35,699 :: main_helper.py:fit_theta :: nn_theta is: resnet
+2022-03-13 11:15:35,705 :: main_helper.py:fit_theta :: Fittig nntheta for 5 Epochs

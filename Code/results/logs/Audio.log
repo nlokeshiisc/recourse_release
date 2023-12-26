@@ -1,0 +1,85 @@
+2022-05-26 08:38:22,053 :: main_our_method.py:<module> :: {
+    "general_specs": "{'dataset': 'googeltts', 'training_data_subset': 'full_data'}",
+    "theta_specs": "{'model_type': 'resnet', 'model_name': 'final-theta-baseline-audio', 'epochs': '30', 'lr': '0.001', 'scheduler': 'True'}",
+    "greedy_specs": "{'model_name': 'final-greedy-audio', 'load_theta': 'True', 'budget': '30', 'num_badex': '100', 'num_R_per_iter': '10'}",
+    "phi_specs": "{'model_name': 'None', 'epochs': '30', 'batch_norm': 'True', 'lr': '0.01', 'scheduler': 'True'}",
+    "our_method_specs": "{'our_method_type': 'baseline', 'model_name': 'final-phi-audio', 'our_method_args': '{\\'pretrn_th_phi\\': \"{\\'th\\': \\'True\\', \\'phi\\': \\'False\\'}\"}', 'epochs': '5', 'prior_on_beta_using_theta': 'True', 'filter_groups_at_idx': '3000', 'interleave': 'True', 'interleave_epochs_or_sgditers': 'interleave _epochs', 'interleave _epochs': \"{'phi': '3', 'th': '2'}\", 'interleave_sgd_iters': \"{'th': '20', 'phi': '20'}\"}",
+    "train_args": "{'th': 'True', 'greedy': 'False', 'phi': 'False', 'our_method': 'False'}",
+    "experiment_name": "Audio",
+    "logger": "results/logs/Audio.log",
+    "gpu_id": "0",
+    "summarywriter": "tblogs/Audio"
+}
+2022-05-26 08:38:22,053 :: main_helper.py:get_data_helper :: Loading dataset: googeltts
+2022-05-26 08:38:22,054 :: main_helper.py:process_data :: Loading: data/training_audio_data_4_60.pkl
+2022-05-26 08:38:29,094 :: main_helper.py:process_data :: Loading: data/testing_audio_data_60.pkl
+2022-05-26 08:38:33,216 :: main_helper.py:process_data :: Loading: data/testing_audio_data_60.pkl
+2022-05-26 08:38:44,786 :: main_helper.py:get_data_helper :: Dataset loading completed
+2022-05-26 08:38:44,810 :: main_our_method.py:<module> :: num_train: 12000, num_test: 12000
+2022-05-26 08:38:51,901 :: main_helper.py:fit_theta :: nn_theta is: resnet
+2022-05-26 08:38:51,901 :: main_helper.py:fit_theta :: Fittig nntheta for 30 Epochs
+2022-05-26 08:39:30,046 :: nn_theta.py:fit_data :: Epoch: 0 accuracy: 0.09741666666666667
+2022-05-26 08:40:12,793 :: nn_theta.py:fit_data :: Epoch: 1 accuracy: 0.11583333333333333
+2022-05-26 08:40:48,243 :: nn_theta.py:fit_data :: Epoch: 2 accuracy: 0.16408333333333333
+2022-05-26 08:41:25,287 :: nn_theta.py:fit_data :: Epoch: 3 accuracy: 0.18566666666666667
+2022-05-26 08:42:04,827 :: nn_theta.py:fit_data :: Epoch: 4 accuracy: 0.21025
+2022-05-26 08:42:41,307 :: nn_theta.py:fit_data :: Epoch: 5 accuracy: 0.21341666666666667
+2022-05-26 08:43:18,226 :: nn_theta.py:fit_data :: Epoch: 6 accuracy: 0.225
+2022-05-26 08:43:58,000 :: nn_theta.py:fit_data :: Epoch: 7 accuracy: 0.22066666666666668
+2022-05-26 08:44:33,786 :: nn_theta.py:fit_data :: Epoch: 8 accuracy: 0.24025
+2022-05-26 08:45:15,192 :: nn_theta.py:fit_data :: Epoch: 9 accuracy: 0.25433333333333336
+2022-05-26 08:45:47,723 :: nn_theta.py:fit_data :: Epoch: 10 accuracy: 0.25583333333333336
+2022-05-26 08:46:25,786 :: nn_theta.py:fit_data :: Epoch: 11 accuracy: 0.24316666666666667
+2022-05-26 08:46:57,224 :: nn_theta.py:fit_data :: Epoch: 12 accuracy: 0.2623333333333333
+2022-05-26 08:47:37,321 :: nn_theta.py:fit_data :: Epoch: 13 accuracy: 0.2554166666666667
+2022-05-26 08:48:14,460 :: nn_theta.py:fit_data :: Epoch: 14 accuracy: 0.25808333333333333
+2022-05-26 08:48:49,994 :: nn_theta.py:fit_data :: Epoch: 15 accuracy: 0.27341666666666664
+2022-05-26 08:49:32,027 :: nn_theta.py:fit_data :: Epoch: 16 accuracy: 0.28125
+2022-05-26 08:50:08,183 :: nn_theta.py:fit_data :: Epoch: 17 accuracy: 0.28925
+2022-05-26 08:50:49,510 :: nn_theta.py:fit_data :: Epoch: 18 accuracy: 0.2796666666666667
+2022-05-26 08:51:25,419 :: nn_theta.py:fit_data :: Epoch: 19 accuracy: 0.2990833333333333
+2022-05-26 08:52:00,204 :: nn_theta.py:fit_data :: Epoch: 20 accuracy: 0.30633333333333335
+2022-05-26 08:52:40,986 :: nn_theta.py:fit_data :: Epoch: 21 accuracy: 0.2881666666666667
+2022-05-26 08:53:16,971 :: nn_theta.py:fit_data :: Epoch: 22 accuracy: 0.31033333333333335
+2022-05-26 08:53:57,129 :: nn_theta.py:fit_data :: Epoch: 23 accuracy: 0.30716666666666664
+2022-05-26 08:54:35,430 :: nn_theta.py:fit_data :: Epoch: 24 accuracy: 0.3155
+2022-05-26 08:55:14,185 :: nn_theta.py:fit_data :: Epoch: 25 accuracy: 0.317
+2022-05-26 08:55:51,835 :: nn_theta.py:fit_data :: Epoch: 26 accuracy: 0.31075
+2022-05-26 08:56:34,355 :: nn_theta.py:fit_data :: Epoch: 27 accuracy: 0.3080833333333333
+2022-05-26 08:57:11,907 :: nn_theta.py:fit_data :: Epoch: 28 accuracy: 0.309
+2022-05-26 08:57:54,721 :: nn_theta.py:fit_data :: Epoch: 29 accuracy: 0.3185
+2022-05-26 08:58:05,587 :: main_helper.py:fit_theta :: Test Accuracy after fitting nn_theta: 0.3185
+2022-05-26 08:58:36,547 :: main_helper.py:fit_theta :: Test Group Accuray is: 
+2022-05-26 08:58:36,548 :: main_helper.py:fit_theta :: {
+    "id-0:val-1": "0.3697499930858612",
+    "id-0:val-0": "0.3154999911785126",
+    "id-0:val-2": "0.27024999260902405",
+    "id-1:val-0": "0.1456666737794876",
+    "id-1:val-2": "0.4690000116825104",
+    "id-1:val-3": "0.2993333339691162",
+    "id-1:val-1": "0.36000001430511475",
+    "id-2:val-3": "0.31333333253860474",
+    "id-2:val-1": "0.29249998927116394",
+    "id-2:val-2": "0.3058333396911621",
+    "id-2:val-0": "0.3362500071525574",
+    "id-2:val-4": "0.34458333253860474",
+    "ideal_accuracy": "0.705",
+    "non-ideal_accuracy": "0.3119491525423729"
+}
+2022-05-26 08:59:07,639 :: main_helper.py:fit_theta :: Train Grp accuracy is:                 {
+    "id-0:val-1": "0.6277034282684326",
+    "id-0:val-2": "0.36127355694770813",
+    "id-0:val-0": "0.4234496057033539",
+    "id-1:val-3": "0.38871750235557556",
+    "id-1:val-2": "0.6237141489982605",
+    "id-1:val-1": "0.624193549156189",
+    "id-1:val-0": "0.2468709498643875",
+    "id-2:val-0": "0.6349034309387207",
+    "id-2:val-1": "0.4221183657646179",
+    "id-2:val-2": "0.43581268191337585",
+    "id-2:val-3": "0.42013129591941833",
+    "id-2:val-4": "0.42927631735801697",
+    "ideal_accuracy": "0.764",
+    "non-ideal_accuracy": "0.42044444444444445"
+}
+2022-05-26 08:59:07,640 :: main_helper.py:fit_theta :: nnth Ready
